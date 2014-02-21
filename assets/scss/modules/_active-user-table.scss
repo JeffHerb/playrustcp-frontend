@@ -1,0 +1,44 @@
+.active-users {
+
+	thead {
+		th {
+			padding-top: 10px;
+		}
+	}
+
+	a.button,
+	input[type="button"],
+	input[type="submit"] {
+		font-size: 0.75em;
+		padding: 0.4em 0.5em 0.3em;
+
+	}
+
+	.action-column {
+		width: 25%;
+	}
+
+	.action-list {
+
+		text-align: right;
+		padding-right: 0.5em;
+
+		li {
+			display: inline;
+
+			&.action-dropdown {
+				display: none;
+			}
+		}
+	}
+
+}
+
+input[type="text"].table-filter {
+	background: $white;
+	display: inline-block;
+	float: right;
+	font-family: FontAwesome;
+	margin: 10px 0 -30px;
+	width: 250px;
+}

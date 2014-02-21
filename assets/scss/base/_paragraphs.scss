@@ -1,0 +1,30 @@
+body{ 
+  
+  font: {
+	  size: 87.5%;
+	  family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  color: #252e35;  
+  line-height: $line-height;
+  background: #f6f6f6;
+    
+}
+
+h1 {
+  font-size: 1.714285714em;
+  line-height: $line-height;
+}
+
+h2 {
+  border-bottom: 1px solid $greyDarker;
+  font-size: 1.5em;
+  line-height: $line-height;
+  margin: 0.5em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.6;
+	margin: 0 0 1.5em 0;
+}

@@ -1,0 +1,45 @@
+.server-info {
+
+	h2 {
+		display: block;
+		padding-bottom: 5px;
+
+		&:before {
+			border: 0;
+			padding-right: 0.5em;
+		}
+	}
+
+	h3 {
+		margin-left: 0.5em;
+	}
+
+	.demographics {
+    	column-count: 3;
+    	column-gap: 20px;
+		-moz-column-count: 3;
+    	-moz-column-gap: 20px;
+    	-webkit-column-count: 3;
+    	-webkit-column-gap: 20px;
+    	margin: 0 0.5em 2em;
+
+    	li {
+
+    		strong {
+    			padding-right: 1em;
+    		}
+    	}
+	}
+
+	.section-actions {
+		ul {
+			margin: 0 0.5em 0.5em;
+
+			li {
+				display: inline-block;
+				padding-right: 5px;
+			}
+		}
+	}
+
+}

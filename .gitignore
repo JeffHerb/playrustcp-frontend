@@ -1,0 +1,13 @@
+# Single files to ignore
+.htaccess
+
+# File Types to ignore
+*.db
+*.zip
+*.rb
+
+# Folders to block
+.sass-cache
+node_modules
+assets/css
+downloads

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Play Rust Admin Control Panel</title> 
+
+		<link rel="stylesheet" type="text/css" href="assets/css/site.css">
+
+	</head>
+	<body>
+
+		<header class="header">
+			<h1>Rust Control Panel</h1>
+
+			<ul>
+				<li><a href="#">Logout</a></li>
+			</ul>
+		</header>
+
+		<div class="cf container">  
+
+			<!-- Access panel -->
+			<div class="grid_12" role="main">
+				<!-- Server Information should be ajaxed in -->
+				
+				<section class="server-info content grid_12">
+					<h2><span class="fa fa-desktop header-icons"></span>Server Information</h2>
+					<ul class="demographics">
+						<li>
+							<strong>Map:</strong> Rust Island 2013
+						</li>
+						<li>
+							<strong>Version:</strong> PlayRust 22.546 Nightly
+						</li>
+						<li>
+							<strong>Players:</strong> 3/100
+						</li>
+					</ul>
+					<h3>Global Functions</h3>
+					<div class="section-actions">
+						<ul>
+							<li><a href="#" class="button fa fa-terminal">RCON Command</a></li>
+							<li><a href="#" class="button fa fa-comment-o">Server Message</a></li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="user-info content grid_12">
+					<h2><span class="fa fa-user header-icons"></span>Current Players</h2>
+
+					<input type="text" name="table-filter" class="table-filter fa fa-search" placeholder="&#xf002; Search Users" data-table="active-users" />
+
+					<table class="active-users" id="active-users">
+						<caption>Active Players</caption>
+						<thead>
+							<tr>
+								<th>
+									Player Name
+								</th>
+								<th>
+									Ping
+								</th>
+								<th>
+									IP Address
+								</th>
+								<th>
+									Steam ID
+								</th>
+								<th class="action-column">
+									Actions
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-name="Player Name 1">
+									<a href="#">Player Name 1</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000000
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li>
+											<a href="#" class="button fa fa-bolt dialog-control" aria-controls="teleportPlayer">		Teleport
+											</a>
+										</li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 2">
+									<a href="#">Player Name 2</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000002
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 3">
+									<a href="#">Player Name 3</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000002
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 4">
+									<a href="#">Player Name 4</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									0000000000000000003
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 5">
+									<a href="#">Player Name 5</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000004
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 6">
+									<a href="#">Player Name 6</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000005
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 7">
+									<a href="#">Player Name 7</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000006
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 8">
+									<a href="#">Player Name 8</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000007
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 9">
+									<a href="#">Player Name 9</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000008
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 10">
+									<a href="#">Player Name 10</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000009
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 11">
+									<a href="#">Player Name 11</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000010
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 12">
+									<a href="#">Player Name 12</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000011
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 13">
+									<a href="#">Player Name 13</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000012
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 14">
+									<a href="#">Player Name 14</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000013
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 15">
+									<a href="#">Player Name 15</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000014
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt" data-control>Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 16">
+									<a href="#">Player Name 16</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000015
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td data-name="Player Name 17">
+									<a href="#">Player Name 17</a>
+								</td>
+								<td>
+									100
+								</td>
+								<td>
+									0.0.0.0
+								</td>
+								<td>
+									00000000000000000016
+								</td>
+								<td>
+									<ul class="action-list">
+										<li class="action-dropdown">
+											<a href="#" class="button fa fa-caret-down">More</a> 
+										</li>
+										<li> <a href="#" class="button fa fa-bolt">Teleport</a> </li>
+										<li> <a href="#" class="button fa fa-comment-o">Message</a> </li>
+										<li> <a href="#" class="button dangerous fa fa-legal">Action</a> </li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+			</div>
+
+		</div>
+
+		<footer>
+		</footer>
+
+		<!-- Hidden Dialogs DO NOT REMOVE -->
+		<div class="dialog-backdrop" id="dialog-backdrop"></div>
+		<div class="dialog" id="teleportPlayer" role="alertdialog" aria-labelledby="teleportTitle" aria-describedby="teleportContents">
+			<div class="header">
+				<span class="title" id="teleportTitle">Teleport Player</span>
+				<a href="#" class="close"><span class="fa fa-times">Close</span></a>
+			</div>
+			<div class="dialog-content" id="teleportContents">
+			</div>
+			<div class="dialog-footer">
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/vendor/jquery.js"></script>
+		<script src="assets/js/plugins/table-sort.js"></script>
+		<script src="assets/js/plugins/dialogs.js"></script>
+
+		<script>
+
+			// Setup all filterable tables
+			$("input.table-filter").tableSort();
+
+			// Setup dialogs();
+			$(".dialog-control").dialog();
+
+		</script>
+
+	</body>
+</html>

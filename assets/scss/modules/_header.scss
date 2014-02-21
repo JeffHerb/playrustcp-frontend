@@ -1,0 +1,37 @@
+.header {
+	background: $black;
+	border-bottom: 1px solid #575757;
+	color: $white;
+	height: 46px;
+
+	h1 {
+		background: url(../images/rust-icon-512.png) no-repeat center left transparent;
+		background-size: 35px 35px;
+		display: inline-block;
+		float: left;
+		font-size: 1.5em;
+		font-weight: 400;
+		margin: 0.2em 0 0 0.5em;
+		padding: 0.1em 0.5em 0.2em 2.0em;
+	}
+
+	ul {
+		float: right;
+
+		li {
+			display: inline-block;
+			margin : 1em 0.25em 0 0;
+
+			a {
+				color: $white;
+				padding: 0.5em;
+
+				&:hover {
+					background: $white;
+					border-radius: 5px;
+					color: $black;
+				}
+			}
+		}
+	}
+}

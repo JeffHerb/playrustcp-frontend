@@ -1,0 +1,47 @@
+.dialog {
+	background: #FFF;
+	border-radius: 5px;
+	display: none;
+	margin: 0 auto;
+	min-height: 200px;
+	min-width: 350px;
+	max-width: 500px;
+	position: absolute;
+	z-index: 1100;
+
+	& .close {
+		color: #FFF;
+		position: absolute;
+		text-shadow: 1px -1px #000;
+		top: 13px;
+		right: 15px;
+		clip: 10, 10, 10, 10;
+	}
+
+	& .header {
+		background: #3C3C3C;
+		border-radius: 5px 5px 0 0;
+		height: 48px;
+		margin: -2px 0 0 0;
+	}
+
+	& .title {
+		font-size: 1.5em;
+		left: 15px;
+		position: absolute;
+		text-shadow: 1px -1px #000;
+		top: 13px;
+
+	}
+}
+
+.dialog-backdrop {
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;	
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}

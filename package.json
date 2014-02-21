@@ -1,0 +1,10 @@
+{
+  "name": "playrustcp",
+  "description": "A Simple Rust Game Control Panel",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-sass": "~0.10.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

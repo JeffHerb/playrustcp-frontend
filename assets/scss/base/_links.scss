@@ -1,0 +1,15 @@
+a {
+	color: $linkColor;
+	text-decoration: none;
+
+	&:hover {
+		color: $linkHover;
+		text-decoration: underline;
+	}
+
+	&:link,
+	&:visited {
+		color: $linkVisited;
+	}
+
+}

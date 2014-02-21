@@ -1,0 +1,26 @@
+// Standard styles shared across the site.
+html, body {
+	background: url('../images/main-background.png') repeat !important;
+	color: $textColor;
+}
+
+.container {
+	max-width: 960px;
+	margin: 1em auto 0;
+	padding: 1.5em;
+}
+
+.content {
+	background: $white;
+	padding: 1.25em;
+	margin-bottom: 1.5em;
+}
+
+.header-icons {
+	font-size: 1.4em;
+	padding-right: 0.25em;
+}
+
+.hide {
+	display: none;
+}

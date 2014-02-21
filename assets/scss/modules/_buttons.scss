@@ -1,0 +1,28 @@
+a.button,
+input[type="button"],
+input[type="submit"] {
+	background: $blue;
+	border-radius: 5px;
+	border: 1px solid rgba($blueDark, .3);
+	color: $white;
+	display: inline-block;
+	padding: 0.75em 1.25em;
+
+	&:hover {
+		background: $blueDark;
+		text-decoration: none;
+	}
+
+	&.fa:before {
+		padding-right: 5px;
+	}
+
+	&.dangerous {
+		background: $red;
+
+		&:hover {
+			background: $redDarker;
+		}
+	}
+}
+
